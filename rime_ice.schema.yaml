@@ -41,6 +41,7 @@ switches:
 # 输入引擎
 engine:
   processors:
+    - lua_processor@kp_input
     - lua_processor@select_character          # 以词定字
     - ascii_composer
     - recognizer

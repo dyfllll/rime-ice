@@ -79,6 +79,10 @@ cold_word_drop_processor = require("cold_word_drop.processor")
 cold_word_drop_filter = require("cold_word_drop.filter")
 
 
+
+-- 处理小键盘
+kp_input = require("kp_input")
+
 -- 暴力 GC
 -- 详情 https://github.com/hchunhui/librime-lua/issues/307
 -- 这样也不会导致卡顿，那就每次都调用一下吧，内存稳稳的
