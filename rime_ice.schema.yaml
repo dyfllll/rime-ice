@@ -41,7 +41,6 @@ switches:
 # 输入引擎
 engine:
   processors:
-    - lua_processor@kp_input
     - lua_processor@select_character          # 以词定字
     - ascii_composer
     - recognizer
@@ -61,7 +60,6 @@ engine:
   translators:
     - punct_translator
     - script_translator
-    - lua_translator@latex_translator   # LaTeX特殊符号
     - lua_translator@date_translator    # 时间、日期、星期
     - lua_translator@lunar              # 农历
     - table_translator@custom_phrase    # 自定义短语 custom_phrase.txt

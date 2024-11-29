@@ -1,4 +1,8 @@
 patch:
+  engine/translators/+:
+    - lua_translator@*latex_translator # LaTeX特殊符号
+  engine/processors/@before 0: lua_processor@*kp_input
+
   latex_translator:
     "vlaxl":
       [
