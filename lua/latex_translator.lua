@@ -1,3 +1,5 @@
+-- 处理LaTeX编码
+
 local function yield_cand(seg, text,des)
     local cand = Candidate('LaTeX', seg.start, seg._end, text, des)
     -- cand.quality = 100

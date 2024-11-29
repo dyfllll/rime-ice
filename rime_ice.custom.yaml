@@ -1,7 +1,7 @@
 patch:
   engine/translators/+:
     - lua_translator@*latex_translator # LaTeX特殊符号
-  engine/processors/@before 0: lua_processor@*kp_input
+  engine/processors/@before 0: lua_processor@*kp_input #处理小键盘,只能加到最前面,加到后面失效
 
   latex_translator:
     "vlaxl":
